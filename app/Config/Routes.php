@@ -33,14 +33,16 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+//Auth
 $routes->get('/login', 'Auth::login');
-$routes->get('/register', 'Auth:register');
+$routes->get('/register', 'Auth::register');
 $routes->get('/logout', 'Auth::logout');
 
+//Site
 $routes->add('site/(:any)', 'Site::index');
 
 //ÁREA ADMIN: Administrador
-$routes->group('admin', ['filter' => 'admin-auth:admin,operator'], function ($routes) {
+$routes->group('admin', function ($routes) {
     $routes->get('dashboard', 'Admin\Dashboard::index');
     //Users
     $routes->get('user', 'Admin\User::index');
@@ -83,6 +85,7 @@ $routes->group('admin', ['filter' => 'admin-auth:admin,operator'], function ($ro
     $routes->put('products/(:num)', 'Admin\Products::update/$1');
     $routes->delete('products/(:num)', 'Admin\Products::destroy/$1');
     $routes->get('products/restore/(:num)', 'Admin\Products::restore/$1');
+
     $routes->get('products/(:num)/images', 'Admin\Products::images/$1');
     $routes->get('products/(:num)/upload-image', 'Admin\Products::uploadImage/$1');
     $routes->post('products/(:num)/upload-image', 'Admin\Products::doUploadImage/$1');

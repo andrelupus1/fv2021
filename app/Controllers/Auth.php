@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Admin;
+namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
@@ -12,14 +12,18 @@ class Auth extends BaseController
 {
     public function index()
     {
-        echo  "teste";
+        echo  "Index";
     }
     public function login()
     {
-        echo "login";
+        return view('Auth/login');
     }
     public function register()
     {
-        echo "Register";
+        echo "Register!";
+    }
+    public function logout()
+    {
+        echo "logout...";
     }
 }

@@ -13,7 +13,7 @@ class Site extends BaseController
         $param = $uri->getQuery(); //Param
         if ($uri->getSegment(1) == 'site') {
             $id_name = $uri->getSegment(2);
-            echo $id_name;
+            echo "$id_name - $param";
         }
     }
 }
