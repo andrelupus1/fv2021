@@ -9,7 +9,7 @@
         </div>
         <div class="card-body">
             <p class="login-box-msg">Este e-mail está...</p>
-            <div class="input-group mb-3">
+            <div class="mb-3 text-center bg-dark">
                 <p><?=$response?>
                 </p>
             </div>
