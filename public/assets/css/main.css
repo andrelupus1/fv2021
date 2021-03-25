@@ -4,3 +4,29 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.btn-primary {
+    box-shadow: 0 2px 2px 0 rgb(255 120 119 / 14%), 0 3px 1px -2px rgb(255 120 119 / 20%),
+        0 1px 5px 0 rgb(255 120 119 / 12%);
+    background-color: #ff7877;
+    border: #fd6b6b;
+}
+.btn-primary:hover {
+    color: #ffffff;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fd6b6b;
+    border: #fd6b6b;
+}
+a.link{
+    color: #fd6b6b;
+}
+.card-primary {
+    border-top: 3px solid #fd6b6b !important;
+}
+.img-logo {
+    background-color: #fd6b6b;
+    border-bottom: 1px solid #fd6b6b;
+    padding: 0.75rem 1.25rem;
+    position: relative;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}

@@ -1,8 +1,8 @@
 <div class="login-box">
     <div class="card card-outline card-primary">
-        <div class="card-header text-center">
+        <div class="card-header text-center bg-dark">
             <a href="<?=base_url('')?>"
-                class="h1"><img class="img-logo bg-dark"
+                class="h1"><img class="img-logo"
                     src="<?=$page_path.'/img/logo.png'?>"
                     width="100%">
             </a>

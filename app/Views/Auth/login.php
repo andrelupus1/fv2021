@@ -7,11 +7,9 @@
                     src="<?=$page_path.'/img/logo.png'?>"
                     width="100%">
             </a>
-            <b><?=$site_name?>
-
         </div>
         <div class="card-body">
-            <p class="login-box-msg">Acesso ao Sistema</p>
+            <p class="login-box-msg">Acesso ao Sistema <b><?=$site_name?></b></p>
 
             <form action="<?=base_url('login')?>"
                 method="post">
@@ -47,27 +45,26 @@
                     <!-- /.col -->
                 </div>
             </form>
-
+            <div class="row text-center mt-2 mb-3">
+                <div class="col-6">
+                    <a href="<?=base_url('password')?>"
+                        class="link">
+                        Recuperar Senha</a>
+                </div>
+                <div class="col-6">
+                    <a href="<?=base_url('register')?>"
+                        class="link">Registrar-se</a>
+                </div>
+            </div>
+            <hr>
+            <!-- social-auth-links -->
             <div class="social-auth-links text-center mt-2 mb-3">
-                <a href="#" class="btn btn-block btn-primary">
-                    <i class="fab fa-facebook mr-2"></i> Facebook
-                </a>
-                <a href="#" class="btn btn-block btn-danger">
-                    <i class="fab fa-google-plus mr-2"></i> Google
-                </a>
+                <a href="#" class="btn btn-outline-light btn-primary">
+                    <i class="fab fa-facebook mr-2"></i></a>
+                <a href="#" class="btn btn-outline-light btn-primary">
+                    <i class="fab fa-google-plus mr-2"></i></a>
             </div>
             <!-- /.social-auth-links -->
-            <div class="text-center mt-2 mb-3">
-                <p class="mb-1">
-                    <a
-                        href="<?=base_url('password')?>">
-                        Recuperar Senha</a>
-                </p>
-                <p class="mb-0">
-                    <a href="<?=base_url('register')?>"
-                        class="text-center">Registrar-se</a>
-                </p>
-            </div>
         </div>
         <!-- /.card-body -->
     </div>
