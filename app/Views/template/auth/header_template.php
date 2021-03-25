@@ -19,6 +19,7 @@
     <!-- Theme style -->
     <link rel="stylesheet"
         href="<?=$page_path?>/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="<?=$page_path?>/css/main.css">
 </head>
 
 <body class="hold-transition login-page">

@@ -22,9 +22,9 @@ class Auth extends BaseController
             'page_path' => base_url('assets'),
             'page_copyright' => 'Festa Virtual'
     ];
-        echo view('template\site\header_template', $data);
+        echo view('template\auth\header_template', $data);
         echo view('Auth\login');
-        echo view('template\site\footer_template');
+        echo view('template\auth\footer_template');
     }
     public function register()
     {
@@ -34,9 +34,9 @@ class Auth extends BaseController
             'page_path' => base_url('assets'),
             'page_copyright' => 'Festa Virtual'
     ];
-        echo view('template\site\header_template', $data);
+        echo view('template\auth\header_template', $data);
         echo view('Auth\register');
-        echo view('template\site\footer_template');
+        echo view('template\auth\footer_template');
     }
     public function password()
     {
@@ -46,9 +46,9 @@ class Auth extends BaseController
             'page_path' => base_url('assets'),
             'page_copyright' => 'Festa Virtual'
     ];
-        echo view('template\site\header_template', $data);
+        echo view('template\auth\header_template', $data);
         echo view('Auth\password');
-        echo view('template\site\footer_template');
+        echo view('template\auth\footer_template');
     }
     public function verifyemail()
     {
@@ -60,9 +60,9 @@ class Auth extends BaseController
             'page_path' => base_url('assets'),
             'page_copyright' => 'Festa Virtual'
     ];
-        echo view('template\site\header_template', $data);
+        echo view('template\auth\header_template', $data);
         echo view('Auth\email');
-        echo view('template\site\footer_template');
+        echo view('template\auth\footer_template');
     }
     public function logout()
     {
