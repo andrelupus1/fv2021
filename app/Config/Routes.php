@@ -20,7 +20,17 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override();
+//$routes->set404Override();
+$routes->set404Override(function () {
+    $data = [
+        'page_title' => 'Não encontrado - Erro 404',
+        'page_path' => base_url('assets'),
+        'page_copyright' => 'Festa Virtual'
+];
+    echo view('template\site\header_template', $data);
+    echo  view('page\404');
+    echo view('template\site\footer_template');
+});
 $routes->setAutoRoute(true);
 
 /*
