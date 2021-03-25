@@ -46,6 +46,7 @@ $routes->get('/', 'Home::index');
 //Auth
 $routes->get('/login', 'Auth::login');
 $routes->get('/register', 'Auth::register');
+$routes->get('/password', 'Auth::password');
 $routes->get('/logout', 'Auth::logout');
 
 //Site

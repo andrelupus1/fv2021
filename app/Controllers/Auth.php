@@ -17,6 +17,7 @@ class Auth extends BaseController
     public function login()
     {
         $data = [
+            'site_name' => 'Festa Virtual',
             'page_title' => 'Login',
             'page_path' => base_url('assets'),
             'page_copyright' => 'Festa Virtual'
