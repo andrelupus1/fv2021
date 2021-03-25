@@ -1,0 +1,1 @@
+alert('Dark Theme');
