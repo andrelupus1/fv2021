@@ -48,6 +48,7 @@ $routes->get('/login', 'Auth::login');
 $routes->get('/register', 'Auth::register');
 $routes->get('/password', 'Auth::password');
 $routes->get('/logout', 'Auth::logout');
+$routes->get('/email', 'Auth::verifyemail');
 
 //Site
 $routes->add('site/(:any)', 'Site::index');

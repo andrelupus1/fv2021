@@ -3,7 +3,12 @@
     <div class="card card-outline card-primary">
         <div class="card-header text-center">
             <a href="<?=base_url('')?>"
-                class="h1"><b><?=$site_name?></a>
+                class="h1"><img class="img-logo"
+                    src="<?=$page_path.'/img/logo.png'?>"
+                    width="100%">
+            </a>
+            <b><?=$site_name?>
+
         </div>
         <div class="card-body">
             <p class="login-box-msg">Acesso ao Sistema</p>
@@ -37,7 +42,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -52,16 +57,17 @@
                 </a>
             </div>
             <!-- /.social-auth-links -->
-
-            <p class="mb-1">
-                <a
-                    href="<?=base_url('password')?>">I
-                    Recuperar Senha</a>
-            </p>
-            <p class="mb-0">
-                <a href="<?=base_url('register')?>"
-                    class="text-center">Registrar-se</a>
-            </p>
+            <div class="text-center mt-2 mb-3">
+                <p class="mb-1">
+                    <a
+                        href="<?=base_url('password')?>">
+                        Recuperar Senha</a>
+                </p>
+                <p class="mb-0">
+                    <a href="<?=base_url('register')?>"
+                        class="text-center">Registrar-se</a>
+                </p>
+            </div>
         </div>
         <!-- /.card-body -->
     </div>

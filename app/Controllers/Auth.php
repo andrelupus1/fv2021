@@ -29,12 +29,39 @@ class Auth extends BaseController
     public function register()
     {
         $data = [
+            'site_name' => 'Festa Virtual',
             'page_title' => 'Registrar-se',
             'page_path' => base_url('assets'),
             'page_copyright' => 'Festa Virtual'
     ];
         echo view('template\site\header_template', $data);
         echo view('Auth\register');
+        echo view('template\site\footer_template');
+    }
+    public function password()
+    {
+        $data = [
+            'site_name' => 'Festa Virtual',
+            'page_title' => 'Recuperar Senha',
+            'page_path' => base_url('assets'),
+            'page_copyright' => 'Festa Virtual'
+    ];
+        echo view('template\site\header_template', $data);
+        echo view('Auth\password');
+        echo view('template\site\footer_template');
+    }
+    public function verifyemail()
+    {
+        $response = "Ops!";
+        $data = [
+            'response' => $response,
+            'site_name' => 'Festa Virtual',
+            'page_title' => 'Ativação - Verifica E-mail',
+            'page_path' => base_url('assets'),
+            'page_copyright' => 'Festa Virtual'
+    ];
+        echo view('template\site\header_template', $data);
+        echo view('Auth\email');
         echo view('template\site\footer_template');
     }
     public function logout()
