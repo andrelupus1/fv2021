@@ -29,7 +29,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <button type="submit" class="btn btn-primary ">Salvar Senha</button>
+            <button type="submit" id="btnSubmit" class="btn btn-primary ">Salvar Senha</button>
           </div>
           <!-- /.col -->
         </div>

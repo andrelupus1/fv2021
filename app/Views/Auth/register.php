@@ -58,7 +58,7 @@
           </div>
           <!-- /.col -->
           <div class="col-lg-4">
-            <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+            <button type="submit" id="btnSubmit" class="btn btn-primary btn-block">Registrar</button>
           </div>
           <!-- /.col -->
         </div>

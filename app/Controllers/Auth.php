@@ -78,7 +78,17 @@ class Auth extends BaseController
     }
     public function terms()
     {
-        echo "Termos...";
+        $response = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni esse sapiente doloribus quod placeat iste, quasi assumenda eaque, asperiores sequi consequatur ut repellendus inventore deleniti in iusto repellat vitae. Sequi!';
+        $data = [
+            'response' => $response,
+            'site_name' => 'Festa Virtual',
+            'page_title' => 'Ativação - Verifica E-mail',
+            'page_path' => base_url('assets'),
+            'page_copyright' => 'Festa Virtual'
+    ];
+        echo view('template\auth\header_template', $data);
+        echo view('Auth\terms');
+        echo view('template\auth\footer_template');
     }
     public function logout()
     {

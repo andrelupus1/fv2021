@@ -40,7 +40,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-lg-4">
-                        <button type="submit" id="enter" class="btn btn-primary btn-block">Entrar</button>
+                        <button type="submit" id="btnSubmit" class="btn btn-primary btn-block">Entrar</button>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -71,9 +71,3 @@
     <!-- /.card -->
 </div>
 <!-- /.login-box -->
-<script>
-    document.getElementById("enter").addEventListener("click", function(e) {
-        e.preventDefault()
-        console.log("Clicou");
-    });
-</script>

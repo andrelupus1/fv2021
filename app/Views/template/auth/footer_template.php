@@ -5,6 +5,12 @@
 </script>
 <!-- AdminLTE App -->
 <script src="<?=$page_path?>/dist/js/adminlte.min.js"></script>
-</body>
 
+<script>
+    document.getElementById("btnSubmit").addEventListener("click", function(e) {
+        e.preventDefault()
+        console.log("Clicou");
+    });
+</script>
+</body>
 </html>
