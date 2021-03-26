@@ -64,7 +64,7 @@ class Auth extends BaseController
     }
     public function verifyemail()
     {
-        $response = "Ops!";
+        $response = "Aprovada!";
         $data = [
             'response' => $response,
             'site_name' => 'Festa Virtual',

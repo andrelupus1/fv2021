@@ -8,7 +8,8 @@
       </a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Crie a sua conta na <?=$site_name?>
+      <p class="login-box-msg">
+        Crie a sua conta no <b><?=$site_name?></b>
       </p>
 
       <form action="<?=base_url('register')?>"
