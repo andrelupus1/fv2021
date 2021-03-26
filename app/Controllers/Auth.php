@@ -76,6 +76,10 @@ class Auth extends BaseController
         echo view('Auth\activeemail');
         echo view('template\auth\footer_template');
     }
+    public function terms()
+    {
+        echo "Termos...";
+    }
     public function logout()
     {
         echo "logout...";

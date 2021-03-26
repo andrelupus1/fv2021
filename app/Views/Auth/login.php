@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-lg-8">
                         <div class="icheck-primary">
                             <input type="checkbox" id="remember">
                             <label for="remember">
@@ -39,19 +39,19 @@
                         </div>
                     </div>
                     <!-- /.col -->
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <button type="submit" id="enter" class="btn btn-primary btn-block">Entrar</button>
                     </div>
                     <!-- /.col -->
                 </div>
             </form>
-            <div class="row text-center mt-2 mb-3">
-                <div class="col-6">
+            <div class="row text-center mt-3 mb-3">
+                <div class="col-lg-6">
                     <a href="<?=base_url('forgotpassword')?>"
                         class="link">
                         Esqueceu a Senha?</a>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <a href="<?=base_url('register')?>"
                         class="link">Registrar-se</a>
                 </div>

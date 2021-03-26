@@ -50,6 +50,7 @@ $routes->get('/forgotpassword', 'Auth::forgotpassword');
 $routes->get('/password', 'Auth::password');
 $routes->get('/logout', 'Auth::logout');
 $routes->get('/email', 'Auth::verifyemail');
+$routes->get('/terms', 'Auth::terms');
 
 //Site
 $routes->add('site/(:any)', 'Site::index');
