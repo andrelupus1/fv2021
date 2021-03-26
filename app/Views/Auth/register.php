@@ -1,7 +1,11 @@
 <div class="register-box">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+    <a href="<?=base_url('')?>"
+                class="h1"><img class="img-logo"
+                    src="<?=$page_path.'/img/logo.png'?>"
+                    width="100%">
+            </a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Register a new membership</p>
@@ -44,7 +48,7 @@
             <div class="icheck-primary">
               <input type="checkbox" id="agreeTerms" name="terms" value="agree">
               <label for="agreeTerms">
-               I agree to the <a href="#">terms</a>
+                I agree to the <a href="#">terms</a>
               </label>
             </div>
           </div>
@@ -56,18 +60,18 @@
         </div>
       </form>
 
-      <div class="social-auth-links text-center">
-        <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook mr-2"></i>
-          Sign up using Facebook
-        </a>
-        <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i>
-          Sign up using Google+
-        </a>
+      <!-- social-auth-links -->
+      <div class="social-auth-links text-center mt-2 mb-3">
+        <a href="#" class="btn btn-outline-light social">
+          <i class="fab fa-facebook mr-2"></i></a>
+        <a href="#" class="btn btn-outline-light social">
+          <i class="fab fa-google-plus mr-2"></i></a>
       </div>
+      <!-- /.social-auth-links -->
 
-      <a href="login.html" class="text-center">I already have a membership</a>
+      <a href="<?=base_url('login')?>"
+        class="text-center">Já possuo
+        conta</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

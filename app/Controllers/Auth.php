@@ -38,6 +38,18 @@ class Auth extends BaseController
         echo view('Auth\register');
         echo view('template\auth\footer_template');
     }
+    public function forgotpassword()
+    {
+        $data = [
+            'site_name' => 'Festa Virtual',
+            'page_title' => 'Esqueceu a Senha?',
+            'page_path' => base_url('assets'),
+            'page_copyright' => 'Festa Virtual'
+    ];
+        echo view('template\auth\header_template', $data);
+        echo view('Auth\forgotpassword');
+        echo view('template\auth\footer_template');
+    }
     public function password()
     {
         $data = [
@@ -61,7 +73,7 @@ class Auth extends BaseController
             'page_copyright' => 'Festa Virtual'
     ];
         echo view('template\auth\header_template', $data);
-        echo view('Auth\email');
+        echo view('Auth\activeemail');
         echo view('template\auth\footer_template');
     }
     public function logout()

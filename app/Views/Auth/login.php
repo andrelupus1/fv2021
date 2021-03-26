@@ -40,16 +40,16 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                        <button type="submit" id="enter" class="btn btn-primary btn-block">Entrar</button>
                     </div>
                     <!-- /.col -->
                 </div>
             </form>
             <div class="row text-center mt-2 mb-3">
                 <div class="col-6">
-                    <a href="<?=base_url('password')?>"
+                    <a href="<?=base_url('forgotpassword')?>"
                         class="link">
-                        Recuperar Senha</a>
+                        Esqueceu a Senha?</a>
                 </div>
                 <div class="col-6">
                     <a href="<?=base_url('register')?>"
@@ -59,9 +59,9 @@
             <hr>
             <!-- social-auth-links -->
             <div class="social-auth-links text-center mt-2 mb-3">
-                <a href="#" class="btn btn-outline-light btn-primary">
+                <a href="#" class="btn btn-outline-light social">
                     <i class="fab fa-facebook mr-2"></i></a>
-                <a href="#" class="btn btn-outline-light btn-primary">
+                <a href="#" class="btn btn-outline-light social">
                     <i class="fab fa-google-plus mr-2"></i></a>
             </div>
             <!-- /.social-auth-links -->
@@ -71,3 +71,9 @@
     <!-- /.card -->
 </div>
 <!-- /.login-box -->
+<script>
+    document.getElementById("enter").addEventListener("click", function(e) {
+        e.preventDefault()
+        console.log("Clicou");
+    });
+</script>
